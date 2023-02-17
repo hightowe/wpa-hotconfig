@@ -1,0 +1,9 @@
+
+wpa-hotconfig (0.2.3) bullseye; urgency=low
+
+  * Very minor changes.
+  * Added this changelog file.
+
+wpa-hotconfig (0.2.2) bullseye; urgency=low
+
+  * Initial release.
