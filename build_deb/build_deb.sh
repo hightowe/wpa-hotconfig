@@ -115,5 +115,11 @@ echo
 echo "Package Contents:"
 dpkg --contents ${DEBFILE}
 
+echo
+echo "Moving ${DEBFILE} to ../releases/"
+mv ${DEBFILE} ../releases/
 
+echo
+echo "Rebuilding the REAME.md from the POD..."
+perl /usr/bin/pod2markdown "$RELEASE" > ../README.md
 

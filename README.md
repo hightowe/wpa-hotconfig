@@ -8,7 +8,7 @@ wpa\_integrate\_ssid.pl --conf=wpa-hotconfig.txt
 
 # DESCRIPTION
 
-**This program** will read the given config file, apply the settings
+This program will read the given config file, apply the settings
 within it to the system wpa\_supplicant.conf file, save that information
 and then ask wpa supplicant to reassociate with those new settings. The
 program was designed to be partnered with systemd and udev to allow WPA

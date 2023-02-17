@@ -48,7 +48,7 @@ use IPC::Open3;                               # core
 use Symbol 'gensym';                          # core
 use Data::Dumper;                             # core
 
-my $VERSION = "0.2.2";
+my $VERSION = "0.2.3";
 
 # Will only return with options we think we can use
 our $opts = MyGetOpts();
@@ -526,7 +526,7 @@ wpa_integrate_ssid.pl --conf=wpa-hotconfig.txt
 
 =head1 DESCRIPTION
 
-B<This program> will read the given config file, apply the settings
+This program will read the given config file, apply the settings
 within it to the system wpa_supplicant.conf file, save that information
 and then ask wpa supplicant to reassociate with those new settings. The
 program was designed to be partnered with systemd and udev to allow WPA
