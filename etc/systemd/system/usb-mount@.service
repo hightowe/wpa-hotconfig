@@ -1,0 +1,16 @@
+# From https://serverfault.com/questions/766506/automount-usb-drives-with-systemd
+#
+# requires package pmount
+#
+# For status: # systemctl status usb-mount@sda1.service
+
+[Unit]
+Description=Mount USB Drive on %i
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/usr/bin/pmount --umask 000 /dev/%i /media/%i
+#ExecStartPost=/bin/bash -c 'echo "ExecStartPost for mounting of /media/%i" >> /root/automount-usb-drives.log'
+ExecStartPost=/sbin/wpa_integrate_ssid.pl --rename-processed-conf --conf=/media/%i/wpa-hotconfig.txt
+ExecStop=/usr/bin/pumount /dev/%i
+

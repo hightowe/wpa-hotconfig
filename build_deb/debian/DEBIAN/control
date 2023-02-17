@@ -1,0 +1,14 @@
+Package: wpa-hotconfig
+Priority: optional
+Architecture: all
+Version: __VERSION__
+Depends: perl, pmount, wpasupplicant
+Conflicts: usbmount
+Recommends: 
+Description: Hot config wpa_supplicant.conf from USB drive
+ This program looks for and will apply configuration options
+ to wpa_supplicant.conf when a USB flash drive is inserted.
+Maintainer: Lester Hightower <hightowe at cpan dot org>
+Homepage: https://github.com/hightowe/wpa-hotconfig
+Source: https://github.com/hightowe/wpa-hotconfig
+Bugs: https://github.com/hightowe/wpa-hotconfig/issues

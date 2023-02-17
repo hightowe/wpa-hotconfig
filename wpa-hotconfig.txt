@@ -1,0 +1,24 @@
+
+#################################
+# Example wpa-hotconfig.txt file
+#################################
+
+# The interface to operate on
+IFACE=wlan0
+
+# If matching entries already exist, replace them or integrate the values?
+#   - For METHOD=integrate, exactly zero or one matching entry must exist.
+#   - For METHOD=replace, two or more entries can exist and they will all
+#     be removed and replaced.
+METHOD=integrate
+#METHOD=replace
+
+# The settings to apply
+# Note: ssid and psk are required.
+#       other fields are optional.
+id_str="an_identifier_string"
+ssid="CenturyLink8403"
+psk="*foofoofoo*"
+key_mgmt=WPA-PSK
+priority=100
+
